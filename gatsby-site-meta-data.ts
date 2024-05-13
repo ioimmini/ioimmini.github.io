@@ -43,7 +43,7 @@ export default {
    */
   featured: [
     {
-      title: '',
+      title: '🔥나의 개발일기',
       category: '',
     },
   ],
@@ -54,7 +54,7 @@ export default {
   timestamps: [
     {
       category: 'Activity',
-      date: '2024.01.25 - 2024.04.20',
+      date: '2024.12.25 - 2024.04.20',
       en: 'Community',
       kr: '커뮤니티',
       info: 'Alice',
@@ -70,7 +70,7 @@ export default {
       title: 'Portfolio',
       description: '포트폴리오',
       techStack: ['React', 'gatsby.js', 'Typescript'],
-      thumbnailUrl: '', // Path to your in the 'assets' folder
+      thumbnailUrl: 'Portfolio.gif', // Path to your in the 'assets' folder
       links: {
         post: '',
         github: '',
@@ -100,7 +100,7 @@ export default {
       links: {
         post: '',
         github: '',
-        demo: '',
+        demo: ' ',
         googlePlay: '',
         appStore: '',
       },

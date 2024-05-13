@@ -77,13 +77,6 @@ export const pageQuery = graphql`
             residence
             bachelorDegree
           }
-          social {
-            github
-            tistory
-          }
-          dropdown {
-            tistory
-          }
         }
         featured {
           title
