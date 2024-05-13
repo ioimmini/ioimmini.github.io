@@ -42,12 +42,8 @@ export default {
    */
   featured: [
     {
-      title: 'category1',
-      category: 'featured-category1',
-    },
-    {
-      title: 'category2',
-      category: 'featured-category2',
+      title: 'gatsby 블로그 만들기',
+      category: '개발',
     },
   ],
 
@@ -56,27 +52,11 @@ export default {
    */
   timestamps: [
     {
-      category: 'Career',
-      date: '2022.01.04 - NOW',
-      en: 'A Corp.',
-      kr: 'A 회사',
-      info: 'A 팀',
-      link: '',
-    },
-    {
-      category: 'Career',
-      date: '2021.01.04 - 2022.01.04',
-      en: 'B Corp.',
-      kr: 'B 회사',
-      info: 'B 팀',
-      link: '',
-    },
-    {
       category: 'Activity',
-      date: '2023.07 - NOW',
+      date: '2024.01.25 - 2024.04.20',
       en: 'Community',
       kr: '커뮤니티',
-      info: 'IT 커뮤니티',
+      info: 'Alice',
       link: '',
     },
   ],
@@ -88,8 +68,34 @@ export default {
     {
       title: 'Portfolio',
       description: '포트폴리오',
-      techStack: ['React', 'Next.js', 'Typescript'],
+      techStack: ['React', 'gatsby.js', 'Typescript'],
       thumbnailUrl: '', // Path to your in the 'assets' folder
+      links: {
+        post: '',
+        github: '',
+        demo: 'https://gilded-stardust-fe2dc4.netlify.app/',
+        googlePlay: '',
+        appStore: '',
+      },
+    },
+    {
+      title: 'Vegan-ro',
+      description: '비건 장소 지도',
+      techStack: ['React', 'Styled-components'],
+      thumbnailUrl: 'veganro.gif', // Path to your in the 'assets' folder
+      links: {
+        post: '',
+        github: '',
+        demo: 'https://veganro-frontend.vercel.app/',
+        googlePlay: '',
+        appStore: '',
+      },
+    },
+    {
+      title: '꿀단집(Honey Touse)',
+      description: '인테리어 쇼핑몰',
+      techStack: ['node.js', 'Express'],
+      thumbnailUrl: 'honeytouse.gif', // Path to your in the 'assets' folder
       links: {
         post: '',
         github: '',
