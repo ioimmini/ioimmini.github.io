@@ -1,11 +1,11 @@
 {
-  "name": "danmin-gatsby-blog",
+  "name": "ioimmini",
   "private": true,
-  "description": "gatsby blog made by danmin",
+  "description": "ioimmini's diary",
   "version": "0.1.0",
-  "author": "danmin20 <ljm991108@gmail.com>",
+  "author": "ioimmini <jumin0114@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/ioimmini/issues"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",

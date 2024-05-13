@@ -150,16 +150,3 @@ export const Dropdown = styled.div`
     align-items: flex-start;
   }
 `;
-
-export const BuyMeACoffeeWrapper = styled.div`
-  position: absolute;
-  top: 300px;
-  left: 0;
-  z-index: 0;
-
-  @media ${MOBILE_MEDIA_QUERY} {
-    top: 270px;
-    right: 0;
-    left: auto;
-  }
-`;

@@ -3,7 +3,6 @@ import ReactRotatingText from 'react-rotating-text';
 
 import { Author } from '@/src/type';
 
-import BuyMeACoffee from '../BuyMeACoffee';
 import Image from '../Image';
 import * as S from './styled';
 
@@ -62,10 +61,6 @@ const MainBanner: React.FC<MainBannerProps> = ({ author }) => {
           </S.DropdownButton>
         </S.SocialWrapper>
       </S.IntroWrapper>
-
-      <S.BuyMeACoffeeWrapper>
-        <BuyMeACoffee />
-      </S.BuyMeACoffeeWrapper>
     </S.Wrapper>
   );
 };

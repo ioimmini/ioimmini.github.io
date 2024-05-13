@@ -2,10 +2,10 @@ export default {
   /**
    * basic Information
    */
-  title: `jeong-min.com`,
-  description: `개발자 단민`,
+  title: `ioimmini.com`,
+  description: `나나미짱의 개발일기`,
   language: `ko`,
-  siteUrl: `https://jeong-min.com/`,
+  siteUrl: `https://ioimmini.com/`,
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
 
   /**
@@ -13,7 +13,7 @@ export default {
    */
   comments: {
     utterances: {
-      repo: ``, //`danmin20/danmin-gatsby-blog`,
+      repo: ``,
     },
   },
 
@@ -21,22 +21,19 @@ export default {
    * introduce yourself
    */
   author: {
-    name: `이정민`,
-    nickname: `단민`,
+    name: `최정민`,
+    nickname: `nami`,
     stack: ['Frontend', 'React', 'Typescript'],
     bio: {
-      email: `ljm991108@gmail.com`,
-      residence: 'Seoul, South Korea',
-      bachelorDegree: 'Kyunghee Univ. Computer Engineering (2018.03-2022.02)',
+      email: `jumin0114@gmail.com`,
+      residence: 'South Korea',
+      bachelorDegree: 'Korea Univ. Electronics and Information Engineering',
     },
     social: {
-      github: `https://github.com/danmin20`,
-      linkedIn: `https://www.linkedin.com/in/jeonming-lee/`,
-      resume: `https://www.figma.com/file/dtkCl6G7G5DVe18DN2LWny/%EC%9D%B4%EC%A0%95%EB%AF%BC-%EC%9D%B4%EB%A0%A5%EC%84%9C?node-id=0%3A1`,
+      github: `https://github.com/ioimmini`,
     },
     dropdown: {
-      tistory: 'https://danminblog.tistory.com/',
-      velog: 'https://velog.io/@danmin20',
+      tistory: 'https://ioimmini.tistory.com/',
     },
   },
 
@@ -102,17 +99,4 @@ export default {
       },
     },
   ],
-
-  /**
-   * metadata for Buy Me A Coffee
-   */
-  remittances: {
-    toss: {
-      link: 'https://toss.me/danmin',
-      qrCode: 'toss_qr.svg', // Path to your in the 'assets' folder
-    },
-    kakaopay: {
-      qrCode: 'kakao_qr.svg', // Path to your in the 'assets' folder
-    },
-  },
 };

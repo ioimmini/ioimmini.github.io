@@ -1,7 +1,6 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 
-import BuyMeACoffee from '@/src/components/BuyMeACoffee';
 import PostHeader from '@/src/components/PostHeader';
 import PostNavigator from '@/src/components/PostNavigator';
 import Seo from '@/src/components/Seo';
@@ -25,15 +24,12 @@ const PostTemplate: React.FC<PostTemplateProps> = ({ location, data }) => {
 
   return (
     <Layout location={location}>
-      <Seo title={`개발자 단민 | ${curPost?.title}`} description={curPost?.excerpt} />
+      <Seo title={`나나미짱의 개발일기 | ${curPost?.title}`} description={curPost?.excerpt} />
       <PostHeader post={curPost} />
       <S.PostContent>
         <div className='markdown' dangerouslySetInnerHTML={{ __html: curPost.html }} />
       </S.PostContent>
-      <S.BuyMeACoffeeWrapper>
-        <div>👇 도움이 되셨다면 👇</div>
-        <BuyMeACoffee />
-      </S.BuyMeACoffeeWrapper>
+
       <PostNavigator prevPost={prevPost} nextPost={nextPost} />
       <Utterances repo={utterancesRepo} path={curPost.slug} />
     </Layout>
