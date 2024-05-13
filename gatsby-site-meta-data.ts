@@ -31,10 +31,11 @@ export default {
     },
     social: {
       github: `https://github.com/ioimmini`,
-    },
-    dropdown: {
       tistory: 'https://ioimmini.tistory.com/',
     },
+    // dropdown: {
+    //   tistory: '',
+    // },
   },
 
   /**
@@ -42,8 +43,8 @@ export default {
    */
   featured: [
     {
-      title: 'gatsby 블로그 만들기',
-      category: '개발',
+      title: '',
+      category: '',
     },
   ],
 

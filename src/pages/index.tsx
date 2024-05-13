@@ -79,6 +79,7 @@ export const pageQuery = graphql`
           }
           social {
             github
+            tistory
           }
           dropdown {
             tistory
