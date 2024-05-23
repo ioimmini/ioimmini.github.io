@@ -8,7 +8,7 @@ const Information: React.FC = () => {
         <Image alt='profile' src='profile.png' width='100px' />
       </S.ImageSection>
       <S.TextSection>
-        <div>Jeongmin Choi</div>
+        <div>Jeongmin Choi (Nami)</div>
         <div>
           <div>새로운 것을 배우고 성장하고 싶은</div>
         </div>

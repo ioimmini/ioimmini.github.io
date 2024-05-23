@@ -12,6 +12,8 @@ export const Wrapper = styled.div`
 
 export const ImageSection = styled.div`
   width: 250px;
+  margin-right: 15px;
+
   @media ${MOBILE_MEDIA_QUERY} {
     width: 150px;
   }
