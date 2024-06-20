@@ -53,6 +53,14 @@ export default {
    */
   timestamps: [
     {
+      category: 'Career',
+      date: '2024.06.12 - 2024.09.11',
+      en: 'LC9',
+      kr: '엘씨나인',
+      info: 'Development Team',
+      link: '',
+    },
+    {
       category: 'Activity',
       date: '2024.12.25 - 2024.04.20',
       en: 'Community',
