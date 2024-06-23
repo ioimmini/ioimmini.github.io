@@ -63,9 +63,9 @@ export default {
     {
       category: 'Activity',
       date: '2024.12.25 - 2024.04.20',
-      en: 'Community',
-      kr: '커뮤니티',
-      info: 'Alice',
+      en: 'Alice',
+      kr: '엘리스',
+      info: 'Education',
       link: '',
     },
   ],
