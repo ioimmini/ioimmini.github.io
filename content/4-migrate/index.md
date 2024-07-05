@@ -2,7 +2,7 @@
 emoji:  🛠️
 title: 'TypeScript 검증 강화를 위해 Yup에서 Zod로 마이그레이션하기'
 date: '2024-07-05'
-categories: migration
+categories: issue
 ---
 
 
@@ -131,6 +131,47 @@ Zod는 함수의 입력과 출력을 검증하여 모든 데이터가 올바른�
 두 라이브러리의 성능을 비교하는 것은 특정 사용 사례, 검증 스키마의 복잡성, 검증되는 데이터의 크기에 따라 크게 달라집니다.
 
 <span style="color:blue">Formik과의 통합이 중요한 경우 Yup을</span> 사용하는 것이 좋습니다. 하지만 <span style="color:red">API 데이터 교환과 같이 클라이언트와 서버 사이에서 전달되는 모든 데이터의 유효성을 검사해야 하는 경우 Zod</span>가 더 나은 선택일 수 있습니다.
+
+> 미들웨어 변경부분
+>
+```
+export const validateYup =
+  (schema: ObjectSchema<any>) => async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      await schema.validate({
+        body: req.body,
+        query: req.query,
+        params: req.params,
+      });
+      return next();
+    } catch (err) {
+      const typedErr = err as Error;
+      console.error(req.params, req.body, req.query);
+      return res
+        .status(400)
+        .json({ success: false, type: typedErr.name, message: typedErr.message });
+    }
+  };
+  ```
+```
+export const validateBodyZod =
+  (schema: z.ZodSchema<any>) => async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      await schema.parse(req.body);
+      return next();
+    } catch (err) {
+      const typedErr = err as z.ZodError;
+      logger.error(req.body);
+
+      return res.status(400).json(
+        successFalse({
+          type: typedErr.name,
+          message: typedErr.errors.map((e) => e.message).join(", "),
+        })
+      );
+    }
+  };
+```
 
 > 🔥 **참고**
 > 

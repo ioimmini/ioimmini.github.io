@@ -43,8 +43,12 @@ export default {
    */
   featured: [
     {
-      title: '🔥나의 개발일기',
-      category: '',
+      title: '🐣 나의 개발일기',
+      category: 'develop',
+    },
+    {
+      title: '🔥 핫 이 슈',
+      category: 'issue',
     },
   ],
 
