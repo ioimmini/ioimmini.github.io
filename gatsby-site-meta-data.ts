@@ -92,7 +92,7 @@ export default {
       },
     },
     {
-      title: 'Vegan-ro',
+      title: '비건로(Vegan-ro)',
       description: '비건 장소 지도',
       techStack: ['React', 'Styled-components'],
       thumbnailUrl: 'veganro.gif', // Path to your in the 'assets' folder
