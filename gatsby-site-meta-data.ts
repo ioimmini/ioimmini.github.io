@@ -112,7 +112,7 @@ export default {
       links: {
         post: '',
         github: '',
-        demo: ' ',
+        demo: 'https://www.honeytouse.com/',
         googlePlay: '',
         appStore: '',
       },
