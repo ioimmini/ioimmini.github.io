@@ -86,7 +86,7 @@ export default {
       links: {
         post: '',
         github: '',
-        demo: 'https://gilded-stardust-fe2dc4.netlify.app/',
+        demo: 'https://ioimmini-github-io.vercel.app/',
         googlePlay: '',
         appStore: '',
       },
