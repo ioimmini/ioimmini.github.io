@@ -107,7 +107,7 @@ export default {
     {
       title: '꿀단집(Honey Touse)',
       description: '인테리어 쇼핑몰',
-      techStack: ['node.js', 'Express'],
+      techStack: ['node.js', 'Express', 'aws'],
       thumbnailUrl: 'honeytouse.gif', // Path to your in the 'assets' folder
       links: {
         post: '',
