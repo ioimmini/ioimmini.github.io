@@ -104,8 +104,8 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://jeong-min.com/',
-        sitemap: 'https://jeong-min.com/sitemap.xml',
+        host: 'https://ioimmini-github-io.vercel.app/',
+        sitemap: 'https://ioimmini-github-io.vercel.app/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },
