@@ -11,7 +11,7 @@ categories: issue
 
 > 🙌 **소개**
 
-Job Creator와 Job Executor 패턴은 대규모 작업을 분할하고 효율적으로 관리하기 멤버십 일수에 따른 멤버십 등급 업데이트와 관련된 Firebase Scheduled Function을 구현하던 도중, 쿼리 작업의 복잡성으로 인해 실행 시간(540초)에 제한이 걸릴 것 같았습니다. 이를 해결하기 위해 **Job Creator → Job Executor 패턴**을 사용하기로 했습니다.
+대규모 작업을 분할하고 효율적으로 관리하기 멤버십 일수에 따른 멤버십 등급 업데이트와 관련된 `Firebase Scheduled Function`을 구현하던 도중, 쿼리 작업의 복잡성으로 인해 실행 시간(540초)에 제한이 걸릴 것 같았습니다. 이를 해결하기 위해 **Job Creator → Job Executor 패턴**을 사용하기로 했습니다.
 
 이 패턴은 대규모 작업을 분할하고 효율적으로 관리하기 위한 설계 패턴으로, 특히 Firebase Functions와 같이 실행 시간에 제한이 있는 환경에서 매우 유용합니다. 구체적으로, Job Creator는 업데이트할 사용자 목록을 분할하여 작업 큐에 저장하고, Job Executor는 이 큐에서 작업을 가져와 실행합니다. 이를 통해 대규모 작업을 여러 개의 작은 작업으로 나누어, 각 작업이 시간 제한 내에서 완료될 수 있도록 합니다. 이 글에서는 Firebase Functions를 이용하여 Job Creator와 Job Executor 패턴을 구현하는 방법을 설명하고, 이를 통해 회원 등급 업데이트 작업을 효율적으로 처리하는 예제를 소개하겠습니다.
 
