@@ -31,7 +31,7 @@ const MainBanner: React.FC<MainBannerProps> = ({ author }) => {
           </strong>
           입니다.
         </S.Title>
-        <Image alt='thumbnail' src='thumbnail.webp' loading='eager' />
+        <Image rel='preload' alt='thumbnail' src='thumbnail.webp' loading='eager' />
       </S.IntroWrapper>
     </S.Wrapper>
   );
