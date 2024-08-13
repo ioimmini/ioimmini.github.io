@@ -73,6 +73,12 @@ const Seo: React.FC<SeoProps> = ({ description, title }) => {
           content: 'wk6Klu47M-KH78kYpy7-8hQSddPHtPGE13LKerYb-j8',
         },
       ]}
+      link={[
+        {
+          rel: 'icon',
+          href: '/static/favicon_48x48.png',
+        },
+      ]}
     />
   );
 };
