@@ -64,10 +64,13 @@ const Seo: React.FC<SeoProps> = ({ description, title }) => {
           property: 'og:image',
           content: site.siteMetadata.ogImage,
         },
-
         {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          name: 'google-site-verification',
+          content: 'wk6Klu47M-KH78kYpy7-8hQSddPHtPGE13LKerYb-j8',
         },
       ]}
     />
