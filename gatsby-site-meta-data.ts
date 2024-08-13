@@ -6,7 +6,7 @@ export default {
   description: `나나미짱의 개발일기`,
   language: `ko`,
   siteUrl: `https://www.ioimmini.com/`,
-  ogImage: `/og-image.png`, // Path to your in the 'static' folder
+  ogImage: `/og-image.webp`, // Path to your in the 'static' folder
 
   /**
    * comments setting

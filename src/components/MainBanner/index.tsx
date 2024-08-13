@@ -32,7 +32,7 @@ const MainBanner: React.FC<MainBannerProps> = ({ author }) => {
           </strong>
           입니다.
         </S.Title>
-        <Image alt='thumbnail' src='thumbnail.png' />
+        <Image alt='thumbnail' src='thumbnail.webp' />
       </S.IntroWrapper>
     </S.Wrapper>
   );
