@@ -87,7 +87,7 @@ const config: GatsbyConfig = {
               }
             `,
             output: '/rss.xml',
-            title: 'jeong-min.com RSS Feed',
+            title: 'ioimmini.com RSS Feed',
             match: '^/blog/',
             link: 'https://feeds.feedburner.com/gatsby/blog',
           },
