@@ -35,7 +35,7 @@ const Layout: React.FC<LayoutProps> = ({ location, children }) => {
   return (
     <ThemeProvider theme={theme.isDark ? darkTheme : lightTheme}>
       <Helmet>
-        <link rel='preconnect' href='https://fonts.googleapis.com' />
+        <link rel='preconnect' href='https://fonts.googleapis.com' crossOrigin='anonymous' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin='anonymous' />
         <link
           rel='preload'
@@ -45,6 +45,7 @@ const Layout: React.FC<LayoutProps> = ({ location, children }) => {
             const link = e.currentTarget as HTMLLinkElement;
             link.rel = 'stylesheet';
           }}
+          crossOrigin='anonymous'
         />
       </Helmet>
       <GlobalStyle />
