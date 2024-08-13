@@ -86,7 +86,7 @@ export default {
       links: {
         post: '',
         github: '',
-        demo: 'https://ioimmini-github-io.vercel.app/',
+        demo: 'https://www.ioimmini.com/',
         googlePlay: '',
         appStore: '',
       },
