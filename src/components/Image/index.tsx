@@ -11,7 +11,7 @@ type ImageNode = {
   relativePath: string;
 };
 
-const Image = ({ src, ...rest }: React.ImgHTMLAttributes<HTMLImageElement>) => {
+const Image = ({ src, loading = 'lazy', ...rest }: React.ImgHTMLAttributes<HTMLImageElement>) => {
   const data = useStaticQuery(graphql`
     query {
       images: allFile(filter: { sourceInstanceName: { eq: "assets" } }) {
@@ -41,10 +41,10 @@ const Image = ({ src, ...rest }: React.ImgHTMLAttributes<HTMLImageElement>) => {
   }: { node: ImageNode } = match;
 
   if (extension === 'svg' || !childImageSharp) {
-    return <img src={publicURL} alt={publicURL} {...rest} />;
+    return <img src={publicURL} alt={publicURL} loading={loading} {...rest} />;
   }
 
-  return <GatsbyImage image={childImageSharp.gatsbyImageData} alt={publicURL} />;
+  return <GatsbyImage image={childImageSharp.gatsbyImageData} alt={publicURL} loading={loading} />;
 };
 
 export default Image;
