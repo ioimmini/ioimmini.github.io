@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import ReactRotatingText from 'react-rotating-text';
 
 import { Author } from '@/src/type';
@@ -32,7 +31,7 @@ const MainBanner: React.FC<MainBannerProps> = ({ author }) => {
           </strong>
           입니다.
         </S.Title>
-        <Image alt='thumbnail' src='thumbnail.webp' />
+        <Image alt='thumbnail' src='thumbnail.webp' loading='eager' />
       </S.IntroWrapper>
     </S.Wrapper>
   );
