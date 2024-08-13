@@ -5,7 +5,7 @@ const Information: React.FC = () => {
   return (
     <S.Wrapper>
       <S.ImageSection>
-        <Image alt='profile' src='profile.webp' width='100px' loading='eager' />
+        <Image alt='profile' src='profile.webp' width='100px' loading='lazy' />
       </S.ImageSection>
       <S.TextSection>
         <div>Jeongmin Choi (Nami)</div>
