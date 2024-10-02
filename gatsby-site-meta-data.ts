@@ -23,7 +23,7 @@ export default {
   author: {
     name: `최정민`,
     nickname: `nami`,
-    stack: ['Frontend', 'React', 'Typescript'],
+    stack: ['개발', 'TypeScript', 'Next.js', 'Node.js', 'React'],
     bio: {
       email: `jumin0114@gmail.com`,
       residence: 'South Korea',
@@ -94,7 +94,7 @@ export default {
     {
       title: '비건로(Vegan-ro)',
       description: '비건 장소 지도',
-      techStack: ['React', 'Styled-components'],
+      techStack: ['React', 'TypeScript', 'Styled-components'],
       thumbnailUrl: 'veganro.gif', // Path to your in the 'assets' folder
       links: {
         post: '',

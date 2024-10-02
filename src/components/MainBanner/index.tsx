@@ -21,7 +21,7 @@ const MainBanner: React.FC<MainBannerProps> = ({ author }) => {
           <strong>
             <ReactRotatingText items={stack} />
           </strong>
-          <span>를</span>
+          <span>(을)를</span>
           <br />
           <span>좋아하는</span>
           <br />
